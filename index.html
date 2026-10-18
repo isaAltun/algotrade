@@ -633,7 +633,7 @@ details.more > .inner { display: grid; gap: 12px; }
           <li><a href="#ml-lacka"><b>ML-validering: läckage, purge och embargo, AUC</b><span>Forskning</span></a></li>
           <li><a href="#steg-6"><b>MLOps: versionerade features, omträning, spärr</b><span>Motorn, steg 6</span></a></li>
           <li><a href="#kontroll"><b>Riskhantering och systemdesign</b><span>Leva eller dö</span></a></li>
-          <li><a href="#arbetssatt"><b>Att styra AI-agenter med begränsade roller</b><span>Arbetssätt</span></a></li>
+          <li><a href="#arbetssatt"><b>Granskningsflöde med minsta behörighet</b><span>Arbetssätt</span></a></li>
         </ul>
       </div>
     </section>
@@ -1052,8 +1052,8 @@ details.more > .inner { display: grid; gap: 12px; }
     <section id="arbetssatt" aria-labelledby="ar-h">
       <div class="sec-head">
         <span class="label">Organisation och process</span>
-        <h2 id="ar-h">AI-agenter med begränsade roller</h2>
-        <p>Jag satte upp ett team av AI-agenter. Varje agent har en roll och bara de behörigheter rollen kräver. Ingen agent kan ändra systemet i drift eller lägga order, och enkla jobb körs på billigare modeller.</p>
+        <h2 id="ar-h">Granskning och behörigheter</h2>
+        <p>Jag delade upp granskning, analys och rättningar i separata roller, utförda av AI-agenter med minsta möjliga behörighet. Ingen roll kan ändra systemet i drift eller lägga order, och varje ändring granskas innan den går i drift.</p>
       </div>
       <div class="agents">
         <div><b>kodgranskare</b><span>läser bara och granskar varje ändring före drift</span></div>
