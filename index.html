@@ -816,13 +816,13 @@ details.more > .inner { display: grid; gap: 12px; }
       </div>
       <div class="panel">
         <div class="panel-top">
-          <span class="status"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="6" fill="#0ca30c"></circle><path d="M4 7.2l2 2 4-4.4" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>Frisk · 0 fel senaste dygnet · 0 omstarter</span>
+          <span class="status"><svg width="14" height="14" viewBox="0 0 14 14" aria-hidden="true"><circle cx="7" cy="7" r="6" fill="#0ca30c"></circle><path d="M4 7.2l2 2 4-4.4" fill="none" stroke="#ffffff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"></path></svg>Frisk · 0 omstarter senaste dygnet</span>
           <span class="label">Marknadsläge USA: uppgång</span>
         </div>
         <div class="funnel" aria-label="Skanningens tratt">
           <div class="row"><span>Kandidater <b class="mono">66</b></span><div class="track"><span class="fill" style="width:100%"></span></div></div>
           <div class="row"><span>Analyserade <b class="mono">45</b></span><div class="track"><span class="fill" style="width:68.2%"></span></div></div>
-          <div class="row"><span>Köpsignaler <b class="mono">0</b></span><div class="track"></div></div>
+          <div class="row"><span>Köpsignaler <b class="mono">0</b></span><div class="track"><span class="fill" style="width:0.0%"></span></div></div>
         </div>
         <div class="kv">
           <div><span class="label">Säljsignaler</span><span class="v">11</span></div>
@@ -832,7 +832,7 @@ details.more > .inner { display: grid; gap: 12px; }
         <div class="meter">
           <span class="label">Bästa kandidat: 50,0 poäng mot tröskeln 60, konsensus 3 av 5. Inget köp.</span>
           <div class="track" role="img" aria-label="Poäng 50 av 100, tröskel 60">
-            <span class="fill" style="width:50%"></span>
+            <span class="fill" style="width:50.0%"></span>
             <span class="tick" style="left:60%"></span>
           </div>
           <div class="scale" aria-hidden="true"><span style="left:0;transform:none">0</span><span style="left:calc(60% + 6px);transform:none">tröskel 60</span><span style="left:100%;transform:translateX(-100%)">100</span></div>
@@ -850,7 +850,7 @@ details.more > .inner { display: grid; gap: 12px; }
         <p>Systemets egen bedömning. Strategin har inte visat någon säkerställd fördel, och därför handlas bara på papper. Oftast har bara några procent av kapitalet varit investerat, så resultatet är litet åt båda hållen.</p>
       </div>
       <div class="tiles" style="margin-top:24px">
-        <div class="tile"><span class="label">Kapital</span><span class="v">$100 060</span><span class="d"><span class="pos">+0,06 %</span> från $100 000</span></div>
+        <div class="tile"><span class="label">Kapital</span><span class="v">$100 060</span><span class="d"><span class="pos">+0,06 %</span> från $100 000</span></div>
         <div class="tile"><span class="label">Största nedgång</span><span class="v">−0,17 %</span><span class="d">från topp till botten</span></div>
         <div class="tile"><span class="label">Avslutade affärer</span><span class="v">15</span><span class="d">60 % vinnande, +$61 bokfört</span></div>
         <div class="tile"><span class="label">t-värde</span><span class="v">0,37</span><span class="d">krav ≥ 2 och 100 affärer</span></div>
@@ -873,35 +873,35 @@ details.more > .inner { display: grid; gap: 12px; }
           <tbody>
             <tr><td>Var affärerna gjordes</td><td>3 hos Alpaca, 12 simulerade på övriga börser</td></tr>
             <tr><td>Profit factor</td><td class="mono">1,29</td></tr>
-            <tr><td>Kostnader</td><td>De första simulerade affärerna saknade en del avgifter. Med samma kostnadsmodell på alla affärer blir resultatet ungefär ±0.</td></tr>
-            <tr><td>Mot marknaden med samma exponering</td><td><span class="mono">+0,13 %</span>, t = 1,04 efter 11 handelsdagar. För tidigt att bedöma.</td></tr>
+            <tr><td>Kostnader</td><td>De första simulerade affärerna saknade avgifter på totalt cirka $61. De är inte avdragna i siffrorna ovan.</td></tr>
+            <tr><td>Mot marknaden med samma exponering</td><td><span class="mono">+0,13 %</span>, t = +1,04 efter 11 handelsdagar. För tidigt att bedöma.</td></tr>
           </tbody>
         </table>
       </div>
 
       <div class="figure">
         <div class="cap">
-          <h3>Högre poäng gav inte bättre utfall</h3>
-          <p>1 122 signaler följdes i skugga, alltså utan köp, och utfallet mättes efter avgifter. Snittet blev −0,54 % per signal, och sambandet mellan poäng och utfall är −0,04.</p>
+          <h3>Ger högre poäng bättre utfall?</h3>
+          <p>1 122 signaler följdes i skugga, alltså utan köp, och utfallet mättes efter avgifter. Snittet blev −0,54 % per signal, och sambandet mellan poäng och utfall är −0,04.</p>
         </div>
         <div class="chart">
-          <div class="cols" role="img" aria-label="Snittutfall efter avgifter per poänggrupp: under 50 minus 0,36 procent, 50 till 55 minus 1,04, 55 till 60 minus 0,58, 60 och över minus 0,68.">
+          <div class="cols" role="img" aria-label="Snittutfall efter avgifter per poänggrupp: under 50 minus 0,36 procent, 50–55 minus 1,04 procent, 55–60 minus 0,58 procent, 60 och över minus 0,68 procent.">
             <div class="yax" aria-hidden="true">
-              <span style="top:15px">0 %</span>
-              <span style="top:71.7px">−0,4 %</span>
+              <span style="top:185.0px">−1,2 %</span>
               <span style="top:128.3px">−0,8 %</span>
-              <span style="top:185px">−1,2 %</span>
+              <span style="top:71.7px">−0,4 %</span>
+              <span style="top:15.0px">0 %</span>
             </div>
             <div class="plot">
-              <div class="g zero" style="top:15px"></div>
-              <div class="g" style="top:71.7px"></div>
+              <div class="g" style="top:185.0px"></div>
               <div class="g" style="top:128.3px"></div>
-              <div class="g" style="top:185px"></div>
-              <div class="bars" style="top:15px">
-                <div class="slot"><div class="bar" style="height:51.1px" tabindex="0" data-tip="<b>Poäng under 50</b><br>746 signaler · −0,36 % i snitt"></div><span class="bval" style="top:57px">−0,36</span></div>
-                <div class="slot"><div class="bar" style="height:147.8px" tabindex="0" data-tip="<b>Poäng 50–55</b><br>253 signaler · −1,04 % i snitt"></div><span class="bval" style="top:153px">−1,04</span></div>
-                <div class="slot"><div class="bar" style="height:81.6px" tabindex="0" data-tip="<b>Poäng 55–60</b><br>92 signaler · −0,58 % i snitt"></div><span class="bval" style="top:87px">−0,58</span></div>
-                <div class="slot"><div class="bar" style="height:96.9px" tabindex="0" data-tip="<b>Poäng 60 och över</b><br>31 signaler · −0,68 % i snitt"></div><span class="bval" style="top:102px">−0,68</span></div>
+              <div class="g" style="top:71.7px"></div>
+              <div class="g zero" style="top:15.0px"></div>
+              <div class="bars">
+                <div class="slot"><div class="bar" style="top:15.0px;height:51.1px;border-radius:0 0 4px 4px" tabindex="0" data-tip="<b>Poäng under 50</b><br>746 signaler · −0,36 % i snitt"></div><span class="bval" style="top:72.1px">−0,36</span></div>
+                <div class="slot"><div class="bar" style="top:15.0px;height:147.8px;border-radius:0 0 4px 4px" tabindex="0" data-tip="<b>Poäng 50–55</b><br>253 signaler · −1,04 % i snitt"></div><span class="bval" style="top:168.8px">−1,04</span></div>
+                <div class="slot"><div class="bar" style="top:15.0px;height:81.6px;border-radius:0 0 4px 4px" tabindex="0" data-tip="<b>Poäng 55–60</b><br>92 signaler · −0,58 % i snitt"></div><span class="bval" style="top:102.6px">−0,58</span></div>
+                <div class="slot"><div class="bar" style="top:15.0px;height:96.9px;border-radius:0 0 4px 4px" tabindex="0" data-tip="<b>Poäng 60 och över</b><br>31 signaler · −0,68 % i snitt"></div><span class="bval" style="top:117.9px">−0,68</span></div>
               </div>
             </div>
             <div class="xlab" aria-hidden="true">
@@ -1038,8 +1038,8 @@ details.more > .inner { display: grid; gap: 12px; }
             <div style="width:11.11%;background:var(--zone-sick)">sjuk</div>
             <div style="width:77.78%;background:var(--zone-ok)">frisk</div>
           </div>
-          <span class="mk a flip" style="left:67.56%"><span>mot SPY: +1,04</span></span>
-          <span class="mk b" style="left:39.11%"><span>per krona: −0,24</span></span>
+          <span class="mk a flip" style="left:67.62%"><span>mot SPY: +1,04</span></span>
+          <span class="mk b" style="left:39.00%"><span>per krona: −0,24</span></span>
         </div>
         <div class="scale" aria-hidden="true">
           <span style="left:0;transform:none">−2</span><span style="left:11.11%">−1,5</span><span style="left:22.22%">−1</span><span style="left:44.44%">0</span><span style="left:66.67%">+1</span><span style="left:88.89%">+2</span>
@@ -1121,7 +1121,7 @@ details.more > .inner { display: grid; gap: 12px; }
   <footer>
     <strong>Isa Altun</strong>
     <p>Källkoden är privat. Sidan beskriver metoder, algoritmer och resultat i ett eget tekniskt projekt. All handel sker på papper utan riktiga pengar, och inget här är investeringsråd.</p>
-    <p class="label" style="text-transform:none;letter-spacing:0">Siffror per 18 oktober 2026.</p>
+    <p class="label" style="text-transform:none;letter-spacing:0">Siffror per 18 oktober 2026. Uppdateras automatiskt varje kväll.</p>
   </footer>
 </div>
 
@@ -1129,19 +1129,8 @@ details.more > .inner { display: grid; gap: 12px; }
 
 <script>
 (function () {
-  var eq = [
-    ["2026-09-05",100000],["2026-09-06",100000],["2026-09-07",100000],["2026-09-08",100000],
-    ["2026-09-10",100000],["2026-09-11",100000],["2026-09-12",100000],["2026-09-13",100000],
-    ["2026-09-14",100000],["2026-09-15",100000],["2026-09-16",100000],["2026-09-17",100000],
-    ["2026-09-18",100002.10],["2026-09-19",100002.22],["2026-09-20",100002.22],["2026-09-21",100012.50],
-    ["2026-09-22",100051.30],["2026-09-23",100028.68],["2026-09-24",100032.92],["2026-09-25",100013.28],
-    ["2026-09-26",100014.08],["2026-09-27",100014.08],["2026-09-28",100020.80],["2026-09-29",99994.16],
-    ["2026-09-30",99942.07],["2026-10-01",99935.73],["2026-10-02",99880.37],["2026-10-03",99880.34],
-    ["2026-10-04",99880.34],["2026-10-05",99880.34],["2026-10-06",99880.34],["2026-10-07",99880.34],
-    ["2026-10-08",99909.69],["2026-10-09",99928.85],["2026-10-10",99927.97],["2026-10-11",99927.97],
-    ["2026-10-12",100023.02],["2026-10-13",100061.16],["2026-10-14",100054.05],["2026-10-15",100066.74],
-    ["2026-10-16",100059.62],["2026-10-17",100059.62]
-  ];
+  var eq = [["2026-09-05",100000.0],["2026-09-06",100000.0],["2026-09-07",100000.0],["2026-09-08",100000.0],["2026-09-10",100000.0],["2026-09-11",100000.0],["2026-09-12",100000.0],["2026-09-13",100000.0],["2026-09-14",100000.0],["2026-09-15",100000.0],["2026-09-16",100000.0],["2026-09-17",100000.0],["2026-09-18",100002.1],["2026-09-19",100002.22],["2026-09-20",100002.22],["2026-09-21",100012.5],["2026-09-22",100051.3],["2026-09-23",100028.68],["2026-09-24",100032.92],["2026-09-25",100013.28],["2026-09-26",100014.08],["2026-09-27",100014.08],["2026-09-28",100020.8],["2026-09-29",99994.16],["2026-09-30",99942.07],["2026-10-01",99935.73],["2026-10-02",99880.37],["2026-10-03",99880.34],["2026-10-04",99880.34],["2026-10-05",99880.34],["2026-10-06",99880.34],["2026-10-07",99880.34],["2026-10-08",99909.69],["2026-10-09",99928.85],["2026-10-10",99927.97],["2026-10-11",99927.97],["2026-10-12",100023.02],["2026-10-13",100061.16],["2026-10-14",100054.05],["2026-10-15",100066.74],["2026-10-16",100059.62],["2026-10-17",100059.62],["2026-10-18",100059.62]];
+  var START = 100000.00;
   var MON = ["jan","feb","mar","apr","maj","jun","jul","aug","sep","okt","nov","dec"];
   var DAY = ["sön","mån","tis","ons","tor","fre","lör"];
   function t(d) { return Date.parse(d + "T12:00:00Z"); }
@@ -1156,7 +1145,7 @@ details.more > .inner { display: grid; gap: 12px; }
     var p = v.toFixed(2).split(".");
     return "$" + p[0].replace(/\B(?=(\d{3})+(?!\d))/g, " ") + "," + p[1];
   }
-  var pts = eq.map(function (r) { return { d: r[0], t: t(r[0]), v: r[1], p: (r[1] / 100000 - 1) * 100 }; });
+  var pts = eq.map(function (r) { return { d: r[0], t: t(r[0]), v: r[1], p: (r[1] / START - 1) * 100 }; });
 
   var tb = document.querySelector("#eq-table tbody");
   if (tb) {
@@ -1186,30 +1175,36 @@ details.more > .inner { display: grid; gap: 12px; }
     var m = { l: 54, r: 64, t: 12, b: 28 };
     var iw = W - m.l - m.r, ih = H - m.t - m.b;
     var t0 = pts[0].t, t1 = pts[pts.length - 1].t;
-    var y0 = -0.15, y1 = 0.10;
+    var lo0 = Math.min(0, Math.min.apply(null, pts.map(function (q) { return q.p; })));
+    var hi0 = Math.max(0, Math.max.apply(null, pts.map(function (q) { return q.p; })));
+    var step = [0.05, 0.1, 0.25, 0.5, 1, 2, 5, 10, 20].filter(function (st) { return (hi0 - lo0) / st <= 5; })[0] || 25;
+    var y0 = Math.floor(lo0 / step - 0.15) * step, y1 = Math.ceil(hi0 / step + 0.15) * step;
+    var dec = step < 0.1 ? 2 : step < 1 ? 1 : 0;
+    var ticks = []; for (var tv = y0; tv <= y1 + step / 2; tv += step) ticks.push(Math.round(tv / step) * step);
     function X(tt) { return m.l + (tt - t0) / (t1 - t0) * iw; }
     function Y(p) { return m.t + (y1 - p) / (y1 - y0) * ih; }
     var s = "";
-    [-0.15, -0.10, -0.05, 0, 0.05, 0.10].forEach(function (v) {
+    ticks.forEach(function (v) {
       var y = Y(v).toFixed(1);
       s += "<line class=\"" + (v === 0 ? "baseline" : "gridline") + "\" x1=\"" + m.l + "\" x2=\"" + (m.l + iw) + "\" y1=\"" + y + "\" y2=\"" + y + "\"></line>";
-      s += "<text x=\"" + (m.l - 8) + "\" y=\"" + y + "\" text-anchor=\"end\" dominant-baseline=\"middle\">" + pct(v, 2) + "</text>";
+      s += "<text x=\"" + (m.l - 8) + "\" y=\"" + y + "\" text-anchor=\"end\" dominant-baseline=\"middle\">" + pct(v, dec) + "</text>";
     });
-    ["2026-09-05", "2026-09-15", "2026-09-25", "2026-10-05", "2026-10-15"].forEach(function (d) {
-      s += "<text x=\"" + X(t(d)).toFixed(1) + "\" y=\"" + (H - 8) + "\" text-anchor=\"middle\">" + dlabel(d) + "</text>";
+    var xt = []; for (var k = 0; k < 5; k++) { xt.push(pts[Math.round(k * (pts.length - 1) / 4)].d); }
+    xt.forEach(function (d, k) {
+      s += "<text x=\"" + X(t(d)).toFixed(1) + "\" y=\"" + (H - 8) + "\" text-anchor=\"" + (k === 0 ? "start" : k === 4 ? "end" : "middle") + "\">" + dlabel(d) + "</text>";
     });
     var line = pts.map(function (q, i) { return (i ? "L" : "M") + X(q.t).toFixed(1) + " " + Y(q.p).toFixed(1); }).join(" ");
     var area = line + " L" + X(t1).toFixed(1) + " " + Y(0).toFixed(1) + " L" + X(t0).toFixed(1) + " " + Y(0).toFixed(1) + " Z";
     s += "<path class=\"area\" d=\"" + area + "\"></path>";
     s += "<path class=\"line\" d=\"" + line + "\"></path>";
-    var lo = pts[26];
-    s += "<text class=\"note\" x=\"" + X(lo.t).toFixed(1) + "\" y=\"" + (Y(lo.p) + 16).toFixed(1) + "\" text-anchor=\"middle\">" + pct(lo.p, 2) + "</text>";
+    var lo = pts.reduce(function (a, q) { return q.p < a.p ? q : a; }, pts[0]);
+    if (lo.p < 0) s += "<text class=\"note\" x=\"" + X(lo.t).toFixed(1) + "\" y=\"" + (Y(lo.p) + 16).toFixed(1) + "\" text-anchor=\"middle\">" + pct(lo.p, 2) + "</text>";
     var last = pts[pts.length - 1];
     s += "<circle class=\"dot\" cx=\"" + X(last.t).toFixed(1) + "\" cy=\"" + Y(last.p).toFixed(1) + "\" r=\"4.5\"></circle>";
     s += "<text class=\"endlabel\" x=\"" + (X(last.t) + 10).toFixed(1) + "\" y=\"" + Y(last.p).toFixed(1) + "\" dominant-baseline=\"middle\">" + pct(last.p, 2) + "</text>";
     s += "<g id=\"eq-hover\" style=\"display:none\"><line class=\"cross\" id=\"eq-cx\" y1=\"" + m.t + "\" y2=\"" + (m.t + ih) + "\"></line><circle class=\"dot\" id=\"eq-cd\" r=\"4.5\"></circle></g>";
     s += "<rect id=\"eq-hit\" x=\"" + m.l + "\" y=\"" + m.t + "\" width=\"" + iw + "\" height=\"" + ih + "\" fill=\"transparent\"></rect>";
-    box.innerHTML = "<svg viewBox=\"0 0 " + W + " " + H + "\" height=\"" + H + "\" role=\"img\" aria-label=\"Kapital per dag från 5 september till 17 oktober 2026. Lägst minus 0,12 procent den 2 oktober, sist plus 0,06 procent.\">" + s + "</svg>";
+    box.innerHTML = "<svg viewBox=\"0 0 " + W + " " + H + "\" height=\"" + H + "\" role=\"img\" aria-label=\"Kapital per dag från " + dlabel(pts[0].d) + " till " + dlabel(last.d) + ". Lägst " + pct(lo.p, 2) + " den " + dlabel(lo.d) + ", sist " + pct(last.p, 2) + ".\">" + s + "</svg>";
 
     var svg = box.querySelector("svg"), hit = box.querySelector("#eq-hit");
     var g = box.querySelector("#eq-hover"), cx = box.querySelector("#eq-cx"), cd = box.querySelector("#eq-cd");
