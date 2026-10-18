@@ -507,6 +507,13 @@ footer strong { color: var(--ink); font-family: var(--f-display); }
 .shows a:hover b, .shows a:focus-visible b { color: var(--accent-ink); text-decoration: underline; }
 .shows b { font-weight: 500; font-size: var(--s-sm); }
 
+/* Teknik */
+.tech { margin: 0; display: grid; gap: 0; }
+.tech > div { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 8px 20px; padding-block: 12px; border-top: 1px solid var(--line); align-items: center; }
+.tech dt { font-family: var(--f-mono); font-size: var(--s-xs); letter-spacing: 0.05em; text-transform: uppercase; color: var(--muted); }
+.tech dd { margin: 0; }
+@media (max-width: 560px) { .tech > div { grid-template-columns: minmax(0, 1fr); } }
+
 /* Hopfällda detaljer */
 details.more { border-top: 1px dashed var(--line); padding-top: 10px; }
 details.more > summary { cursor: pointer; width: fit-content; font-family: var(--f-mono); font-size: var(--s-xs); color: var(--accent-ink); list-style: none; }
@@ -616,7 +623,7 @@ details.more > .inner { display: grid; gap: 12px; }
       </div>
       <div class="role">
         <span class="label">Min roll</span>
-        <p>Jag har lett projektet från idé till drift och byggt systemet med AI-verktyget Claude Code som utvecklingsstöd. Jag satte målen och säkerhetsreglerna, till exempel att bara handla på papper och att ingen ändring går i drift utan test. Idén till kontrollsystemet ”leva eller dö” är min. Jag valde mellan de alternativ som togs fram, godkände varje ändring efter test och granskning, och följer upp systemet varje dag.</p>
+        <p>Jag har satt ihop systemet från idé till drift. Jag satte målen och säkerhetsreglerna, till exempel att bara handla på papper och att ingen ändring går i drift utan test. Jag valde mellan metoder och lösningar och godkände varje ändring efter test och granskning. Idén till kontrollsystemet ”leva eller dö” är min. Under arbetet har jag använt flera AI-verktyg som stöd i kodningen. Systemet följer jag upp varje dag.</p>
       </div>
       <div class="shows">
         <h3 style="font-size:1.0625rem">Det här visar projektet</h3>
@@ -1102,9 +1109,12 @@ details.more > .inner { display: grid; gap: 12px; }
 
     <section aria-labelledby="te-h">
       <div class="sec-head"><h2 id="te-h">Teknik</h2></div>
-      <div class="chips">
-        <span class="chip">Python</span><span class="chip">pandas</span><span class="chip">NumPy</span><span class="chip">ta</span><span class="chip">XGBoost</span><span class="chip">scikit-learn</span><span class="chip">SQLite</span><span class="chip">REST-API:er</span><span class="chip">Alpaca</span><span class="chip">yfinance</span><span class="chip">git</span><span class="chip">unittest</span><span class="chip">Windows Schemaläggaren</span><span class="chip">ntfy</span><span class="chip">Claude Code</span>
-      </div>
+      <dl class="tech">
+        <div><dt>Språk och data</dt><dd class="chips"><span class="chip">Python</span><span class="chip">pandas</span><span class="chip">NumPy</span><span class="chip">SQLite</span></dd></div>
+        <div><dt>ML och statistik</dt><dd class="chips"><span class="chip">XGBoost</span><span class="chip">scikit-learn</span><span class="chip">walk-forward-validering</span><span class="chip">t-test</span></dd></div>
+        <div><dt>Marknadsdata och mäklare</dt><dd class="chips"><span class="chip">REST-API:er</span><span class="chip">Alpaca</span><span class="chip">yfinance</span><span class="chip">ta (tekniska indikatorer)</span></dd></div>
+        <div><dt>Drift och kvalitet</dt><dd class="chips"><span class="chip">git</span><span class="chip">unittest</span><span class="chip">schemalagda jobb</span><span class="chip">push-larm (ntfy)</span></dd></div>
+      </dl>
     </section>
   </main>
 
