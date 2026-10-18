@@ -40,6 +40,7 @@
   --accent-ink: #1c5cab;
   --accent-wash: rgba(42, 120, 214, 0.10);
   --neutral-mark: #8a939f;
+  --pulse-base: #7d8ba0;
   --pos: #006300;
   --neg: #b02a2a;
   --zone-dead: rgba(208, 59, 59, 0.16);
@@ -70,6 +71,7 @@
     --accent-ink: #86b6ef;
     --accent-wash: rgba(57, 135, 229, 0.16);
     --neutral-mark: #6b7480;
+    --pulse-base: #5f7699;
     --pos: #3fc23f;
     --neg: #f08080;
     --zone-dead: rgba(208, 59, 59, 0.28);
@@ -91,6 +93,7 @@
   --accent-ink: #86b6ef;
   --accent-wash: rgba(57, 135, 229, 0.16);
   --neutral-mark: #6b7480;
+  --pulse-base: #5f7699;
   --pos: #3fc23f;
   --neg: #f08080;
   --zone-dead: rgba(208, 59, 59, 0.28);
@@ -133,6 +136,7 @@ p { margin: 0; max-width: 68ch; }
   color: var(--muted);
 }
 .num { font-variant-numeric: tabular-nums; }
+.nw { white-space: nowrap; }
 .neg { color: var(--neg); }
 .pos { color: var(--pos); }
 
@@ -481,12 +485,11 @@ footer strong { color: var(--ink); font-family: var(--f-display); }
 }
 .pulse { display: block; width: 100%; height: 56px; }
 .pulse path { fill: none; stroke: var(--accent); stroke-width: 2; stroke-linejoin: round; stroke-linecap: round; vector-effect: non-scaling-stroke; }
-.pulse .base { opacity: 0.35; }
-.pulse .beam { stroke-dasharray: 70 600; animation: sweep 3.2s linear infinite; }
+.pulse .base { stroke: var(--pulse-base); }
+.pulse .beam { stroke-width: 3; stroke-dasharray: 70 600; animation: sweep 3.2s linear infinite; }
 @keyframes sweep { from { stroke-dashoffset: 70; } to { stroke-dashoffset: -600; } }
 @media (prefers-reduced-motion: reduce) {
   .pulse .beam { animation: none; display: none; }
-  .pulse .base { opacity: 1; }
 }
 .vrows { margin: 0; display: grid; gap: 0; }
 .vrows > div { display: grid; grid-template-columns: 112px minmax(0, 1fr); gap: 10px; padding-block: 7px; border-top: 1px solid var(--line); }
@@ -548,7 +551,7 @@ details.more > .inner { display: grid; gap: 12px; }
   <header class="hero" id="top">
     <div class="hero-grid">
       <div class="stack" style="gap:16px">
-        <span class="label">Eget projekt · Paper trading · Siffror per 18 okt 2026</span>
+        <span class="label">Eget projekt · Paper trading · <span class="nw">Siffror per 18 okt 2026</span></span>
         <h1>AlgoTrade</h1>
         <p class="tagline">Ett handelssystem som är byggt för att kunna dö.</p>
         <p class="sub">Automatiserat handelssystem med maskininlärning och statistisk självkontroll</p>
@@ -958,7 +961,10 @@ details.more > .inner { display: grid; gap: 12px; }
 
         <article>
           <h3>Strategitest med regler bestämda i förväg</h3>
-          <p>Sex varianter prövades: systemet självt, likaviktade aktier, en ETF-korg, korgen med trendfilter, korgen med kontantbuffert och SPY. Kraven för godkänt skrevs innan något kördes: lägre största nedgång än SPY, Sharpe minst SPY − 0,10 efter avgifter och stabilt resultat över delperioder. Perioden från oktober 2024 hålls låst för ett slutprov. Ingen variant godkändes.</p>
+          <p>Sex varianter prövades mot krav som skrevs innan något kördes. <strong>Ingen variant godkändes.</strong></p>
+          <details class="more"><summary>Visa metod</summary><div class="inner">
+            <p>Varianterna var systemet självt, likaviktade aktier, en ETF-korg, korgen med trendfilter, korgen med kontantbuffert och SPY. Kraven för godkänt: lägre största nedgång än SPY, Sharpe minst SPY − 0,10 efter avgifter och stabilt resultat över delperioder. Perioden från oktober 2024 hålls låst för ett slutprov.</p>
+          </div></details>
           <div class="chart" style="padding:18px 16px 12px">
             <div class="hb-area" role="img" aria-label="Årlig avkastning januari 2021 till september 2024: systemet minus 1,9 procent, kontanter plus 2,6 procent, SPY plus 13,6 procent.">
               <div class="gl" aria-hidden="true">
